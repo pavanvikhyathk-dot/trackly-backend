@@ -14,3 +14,6 @@ Plain-English, one line each. Added to as we go.
 - **`@CreatedDate`** — tells Spring "fill this field automatically with the current time, only once, when the document is first saved."
 - **`@LastModifiedDate`** — tells Spring "update this field automatically with the current time, every time the document is saved again."
 - **`@EnableMongoAuditing`** — the on-switch, placed on a `@Configuration` class (not on the model). Without this somewhere, `@CreatedDate` and `@LastModifiedDate` do nothing at all.
+
+## Gotchas
+- **Spring Boot 4 renamed the Mongo URI property.** `spring.data.mongodb.uri` (Boot 2/3) silently does nothing in Boot 4 — the key is now `spring.mongodb.uri`. No error, no warning: it just falls back to the driver's default `localhost:27017/test`, so your data saves to the wrong database and looks "missing." Always double check the property prefix matches your actual Boot version.
