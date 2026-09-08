@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: trackly-backend
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/trackly
+
+server:
+  port: 8080
