@@ -9,6 +9,7 @@ import com.trackly.backend.repository.JobApplicationRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class JobApplicationService {
@@ -46,5 +47,19 @@ public class JobApplicationService {
                 stream().
                 map(mapper :: toResponse)
                 .toList();
+    }
+
+    public JobApplicationResponse update(String id, JobApplicationRequest request)
+    {
+        JobApplication application = repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Application not found: " + id));
+        mapper.updateEntityFromRequest(request, application);
+        JobApplication saved = repository.save(application);
+        return mapper.toResponse(saved);
+    }
+
+    public void deleteById(String id)
+    {
+        repository.deleteById(id);
     }
 }

@@ -37,4 +37,16 @@ public class JobApplicationController {
             @Valid @RequestBody JobApplicationRequest request){
         return service.create(request);
     }
+
+    @PutMapping("/{id}")
+    public JobApplicationResponse update(@PathVariable String id, @Valid @RequestBody JobApplicationRequest request)
+    {
+        return service.update(id, request);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable String id)
+    {
+        service.deleteById(id);
+    }
 }
