@@ -1,6 +1,6 @@
-package com.trackly.backend.dto;
+package com.trackly.backend.application.dto;
 
-import com.trackly.backend.enums.ApplicationStatus;
+import com.trackly.backend.application.enums.ApplicationStatus;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

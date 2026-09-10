@@ -1,4 +1,4 @@
-package com.trackly.backend.exception;
+package com.trackly.backend.application.exception;
 
 public class ApplicationNotFoundException extends RuntimeException{
     public ApplicationNotFoundException(String id)

@@ -1,6 +1,6 @@
-package com.trackly.backend.model;
+package com.trackly.backend.application.model;
 
-import com.trackly.backend.enums.ApplicationStatus;
+import com.trackly.backend.application.enums.ApplicationStatus;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;

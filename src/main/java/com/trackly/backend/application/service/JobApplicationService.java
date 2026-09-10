@@ -1,12 +1,12 @@
-package com.trackly.backend.service;
+package com.trackly.backend.application.service;
 
-import com.trackly.backend.dto.JobApplicationRequest;
-import com.trackly.backend.dto.JobApplicationResponse;
-import com.trackly.backend.enums.ApplicationStatus;
-import com.trackly.backend.exception.ApplicationNotFoundException;
-import com.trackly.backend.mapper.JobApplicationMapper;
-import com.trackly.backend.model.JobApplication;
-import com.trackly.backend.repository.JobApplicationRepository;
+import com.trackly.backend.application.dto.JobApplicationRequest;
+import com.trackly.backend.application.dto.JobApplicationResponse;
+import com.trackly.backend.application.enums.ApplicationStatus;
+import com.trackly.backend.application.exception.ApplicationNotFoundException;
+import com.trackly.backend.application.mapper.JobApplicationMapper;
+import com.trackly.backend.application.model.JobApplication;
+import com.trackly.backend.application.repository.JobApplicationRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

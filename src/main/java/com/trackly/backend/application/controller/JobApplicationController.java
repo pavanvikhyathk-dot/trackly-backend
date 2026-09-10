@@ -1,10 +1,9 @@
-package com.trackly.backend.controller;
+package com.trackly.backend.application.controller;
 
-
-import com.trackly.backend.dto.JobApplicationRequest;
-import com.trackly.backend.dto.JobApplicationResponse;
-import com.trackly.backend.enums.ApplicationStatus;
-import com.trackly.backend.service.JobApplicationService;
+import com.trackly.backend.application.dto.JobApplicationRequest;
+import com.trackly.backend.application.dto.JobApplicationResponse;
+import com.trackly.backend.application.enums.ApplicationStatus;
+import com.trackly.backend.application.service.JobApplicationService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 

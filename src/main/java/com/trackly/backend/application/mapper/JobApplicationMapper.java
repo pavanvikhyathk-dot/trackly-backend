@@ -1,8 +1,8 @@
-package com.trackly.backend.mapper;
+package com.trackly.backend.application.mapper;
 
-import com.trackly.backend.dto.JobApplicationRequest;
-import com.trackly.backend.dto.JobApplicationResponse;
-import com.trackly.backend.model.JobApplication;
+import com.trackly.backend.application.dto.JobApplicationRequest;
+import com.trackly.backend.application.dto.JobApplicationResponse;
+import com.trackly.backend.application.model.JobApplication;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 
